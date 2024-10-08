@@ -1,15 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter as Router } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
 
 import Homepage from "./views/Homepage";
+import Flow from "./views/Flow";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Homepage />,
+    },
+    {
+        path: "/flow",
+        element: <Flow />,
+    },
+], { basename: "/", });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-        <Router>
-            <Homepage />
-        </Router>
-    </React.StrictMode>
+    <RouterProvider router={router} />
 );

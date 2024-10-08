@@ -18,9 +18,10 @@ export default function Homepage() {
         <>
             <Navbar/>
             <HomepageProject
-                projectBackgroundImage={`${process.env.PUBLIC_URL}/assets/flow-homepage.png`}
+                projectBackgroundImage={`${process.env.PUBLIC_URL}/assets/flow/flow-homepage.png`}
                 projectName={"FLOW"}
                 projectYear={"2023"}
+                projectPageRoute={"/flow"}
             />
             <div className="spacer"></div>
             <HomepageProject

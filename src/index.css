@@ -21,6 +21,15 @@ a {
     color: white;
 }
 
+/* Common */
+
+.center-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 /* Navbar */
 
 .navbar {
@@ -142,3 +151,51 @@ a {
     margin: auto;
 }
 
+/* Flow */
+
+.presentation-flow {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.presentation-flow img {
+    height: auto;
+}
+
+.down-arrow {
+    margin-top: 5%;
+    width: 50px;
+    cursor: pointer;
+}
+
+.text-flow {
+    margin-top: 15%;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.text-flow p:nth-child(1) {
+    font-size: 18px;
+}
+
+.text-flow p:nth-child(2) {
+    margin-top: 10%;
+    font-size: 14px;
+    color: #939191;
+}
+
+.flow-carousel {
+    width: 100%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+}
