@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         path: "/flow",
         element: <Flow />,
     },
-], { basename: "/", });
+], { basename: "/www.sebastianodellangelo.it", });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
