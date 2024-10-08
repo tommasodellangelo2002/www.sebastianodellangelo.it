@@ -1,23 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import "./index.css";
+import './index.css';
 
-import Homepage from "./views/Homepage";
-import Flow from "./views/Flow";
+import Homepage from './views/Homepage';
+import Flow from './views/Flow';
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: '/',
         element: <Homepage />,
     },
     {
-        path: "/flow",
+        path: '/flow',
         element: <Flow />,
     },
-], { basename: "/", });
+]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const root = document.getElementById('root');
+ReactDOM.createRoot(root).render(
     <RouterProvider router={router} />
 );
